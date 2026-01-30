@@ -1,0 +1,446 @@
+# ==============================================================================
+# Web Research Agent - Comprehensive .gitignore
+# ==============================================================================
+# This file specifies intentionally untracked files to ignore.
+# https://git-scm.com/docs/gitignore
+# ==============================================================================
+
+# ==============================================================================
+# PYTHON
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff
+instance/
+.webassets-cache
+
+# Scrapy stuff
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ==============================================================================
+# VIRTUAL ENVIRONMENTS
+# ==============================================================================
+
+.venv/
+venv/
+ENV/
+env/
+.env/
+.virtualenv/
+virtualenv/
+.python-venv/
+.conda/
+conda-env/
+
+# ==============================================================================
+# IDE / EDITOR
+# ==============================================================================
+
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*.swn
+*~
+.vim/
+tags
+.lvimrc
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+.org-id-locations
+*_archive
+*_flymake.*
+/eshell/history
+/eshell/lastdir
+/elpa/
+*.rel
+/auto/
+.cask/
+dist/
+flycheck_*.el
+.projectile
+.dir-locals.el
+network-security.data
+
+# Atom
+.atom/
+
+# Notepad++
+*.bak
+
+# ==============================================================================
+# OPERATING SYSTEM
+# ==============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# PROJECT-SPECIFIC: RESEARCH OUTPUTS
+# ==============================================================================
+
+# Research output files (generated, should not be committed)
+research.json
+research.txt
+research.md
+research.html
+
+# Timestamped run outputs
+runs/
+output/
+reports/
+results/
+
+# ==============================================================================
+# PROJECT-SPECIFIC: CACHE
+# ==============================================================================
+
+# Application cache directory
+.cache/
+cache/
+
+# Serper API cache
+.cache/web-research-agent/
+*.cache.json
+
+# ==============================================================================
+# PROJECT-SPECIFIC: CONFIGURATION & SECRETS
+# ==============================================================================
+
+# Environment files (may contain secrets)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+*.env
+
+# Config files with secrets
+config.json
+config.local.json
+config.*.json
+!config.example.json
+!config.template.json
+
+# API keys and credentials
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+credentials.json
+secrets.json
+api_keys.json
+.secrets/
+secrets/
+
+# ==============================================================================
+# PROJECT-SPECIFIC: LOGS
+# ==============================================================================
+
+# Log files
+*.log
+logs/
+log/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ==============================================================================
+# PROJECT-SPECIFIC: TEMPORARY FILES
+# ==============================================================================
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# ==============================================================================
+# DOCUMENTATION BUILD
+# ==============================================================================
+
+# Sphinx
+docs/_build/
+doc/_build/
+
+# MkDocs
+site/
+
+# ==============================================================================
+# DOCKER
+# ==============================================================================
+
+# Docker
+.docker/
+docker-compose.override.yml
+docker-compose.local.yml
+
+# ==============================================================================
+# MISCELLANEOUS
+# ==============================================================================
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Archive files (usually shouldn't be in repo)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Large data files
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.h5
+*.hdf5
+!example*.csv
+!test*.csv
+!sample*.csv
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Profiling data
+*.prof
+*.lprof
+*.cprof
+
+# Coverage data
+.coverage
+htmlcov/
+
+# Benchmarks
+.benchmarks/
+
+# Node (if any frontend)
+node_modules/
+.npm/
+.yarn/
+
+# ==============================================================================
+# ALLOW PATTERNS (Negation)
+# ==============================================================================
+
+# Keep input template
+!input.txt
+
+# Keep example configurations
+!*.example
+!*.template
+!*.sample
+
+# Keep requirements
+!requirements.txt
+!requirements-dev.txt
+!requirements-test.txt
+
+# Keep essential config
+!pyproject.toml
+!setup.py
+!setup.cfg
+!MANIFEST.in
+
+# ==============================================================================
+# END OF .gitignore
+# ==============================================================================
